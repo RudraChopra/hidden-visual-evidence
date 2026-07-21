@@ -1,6 +1,5 @@
 # Hidden Visual Evidence Results Repository
 
-This folder is the canonical record for the paper currently titled:
 
 **Self Verification Through Hidden Visual Evidence in Vision Language Models**
 
