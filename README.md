@@ -75,16 +75,3 @@ model-selection claim.
    report formal taxonomy percentages until an independent review is complete.
 6. Both evaluated models are from the Qwen family.
 
-## Suggested GitHub setup
-
-Large binary outputs should use Git LFS:
-
-```bash
-git lfs install
-git lfs track "*.zip"
-git lfs track "*.png"
-git add .gitattributes
-```
-
-Commit raw result ZIPs without modifying them. `FILE_MANIFEST_SHA256.csv`
-allows later verification that files have not changed.
