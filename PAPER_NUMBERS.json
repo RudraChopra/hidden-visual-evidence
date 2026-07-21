@@ -1,0 +1,39 @@
+{
+  "central_claim": "Hidden-state perturbations localize causal visual evidence across Qwen 7B and 3B. Causal evidence does not certify correctness, but semantic readout plus counterfactual masking can diagnose visual hallucinations.",
+  "controlled_localization": {
+    "qwen7b_patch_ap": 0.761,
+    "qwen3b_patch_ap": 0.689,
+    "qwen7b_top1_hit": 0.885,
+    "qwen3b_top1_hit": 0.848
+  },
+  "causal_interventions_k3": {
+    "qwen7b_necessity_lift": 0.211,
+    "qwen7b_sufficiency_lift": 0.508,
+    "qwen3b_necessity_lift": 0.161,
+    "qwen3b_sufficiency_lift": 0.339
+  },
+  "verification": {
+    "qwen7b_discovery_auroc": 0.747,
+    "qwen3b_frozen_transfer_auroc": 0.558,
+    "qwen3b_tuned_auroc": 0.623
+  },
+  "semantic_diagnosis": {
+    "qwen7b_all_rate": 0.7,
+    "qwen7b_hallucination_rate": 0.7,
+    "qwen7b_hallucination_p": 0.0077,
+    "qwen3b_all_rate": 0.75,
+    "qwen3b_hallucination_rate": 0.722,
+    "qwen3b_hallucination_p": 0.0016
+  },
+  "airport_example": {
+    "clean_p_yes": 0.936,
+    "top_patch_blur_p_yes": 0.048,
+    "random_patch_blur_p_yes": 0.931,
+    "semantic_target_margin": 1.0138311386108398,
+    "notable_concepts": [
+      "truck",
+      "vehicle",
+      "car"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+Qwen semantic causal diagnosis, corrected held-out results
+
+Qwen 7B:
+- Held-out examples: 40
+- Causal patch has stronger target-object signal than random in 70.0% of examples
+- Hallucinated answers only: 70.0%
+- Top-versus-random Wilcoxon p-value on hallucinations: 0.007656
+- Grounded-versus-hallucinated AUROC: 0.435
+
+Qwen 3B:
+- Held-out examples: 72
+- Causal patch has stronger target-object signal than random in 75.0% of examples
+- Hallucinated answers only: 72.2%
+- Top-versus-random Wilcoxon p-value on hallucinations: 0.00156
+- Grounded-versus-hallucinated AUROC: 0.588
+
+Main interpretation:
+The post-merger semantic probe works as a diagnosis tool. Causal patches contain stronger queried-object semantic signal than matched random patches, even when the answer is hallucinated. However, the semantic margin does not reliably separate grounded from hallucinated answers, so it should not be framed as a standalone hallucination detector.
+
+Airport/car example:
+- Causal patch target margin: 1.014
+- Readout includes truck, vehicle, and car among the strongest object concepts
+- This complements the earlier counterfactual result where masking the same patch changed the answer from YES to NO

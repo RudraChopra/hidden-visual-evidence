@@ -1,0 +1,9 @@
+As a simple depth baseline, we compare the semantic probe at the
+development-selected Qwen 7B hidden-state index with a uniformly chosen
+alternative index. We apply the same comparison to the frozen relative-depth
+transfer on Qwen 3B. On held-out hallucinations, the selected Qwen 7B depth
+produces a mean causal-minus-random target-concept margin of 1.910, compared
+with 0.408 across alternative layers. The corresponding Qwen 3B values are
+1.506 and 0.467. In both models, the selected depth exceeds every alternative
+layer in mean margin (exact layer-randomization p=0.034 and p=0.027).
+This is a lightweight baseline rather than a new model-selection claim.

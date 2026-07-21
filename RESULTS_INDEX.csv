@@ -1,0 +1,17 @@
+section,experiment,metric,value,ci_or_note,status,canonical_source
+Controlled localization,Qwen 7B hidden-state ranking,Patch AP,0.761,95% CI 0.724 to 0.794,Primary,pope_hidden_evidence_master_9of10_RESULTS.zip
+Controlled localization,Qwen 3B hidden-state ranking,Patch AP,0.689,95% CI 0.644 to 0.732,Primary,pope_hidden_evidence_master_9of10_RESULTS.zip
+Controlled localization,Qwen 7B hidden-state ranking,Top-1 target hit,0.885,,Primary,pope_hidden_evidence_master_9of10_RESULTS.zip
+Controlled localization,Qwen 3B hidden-state ranking,Top-1 target hit,0.848,,Primary,pope_hidden_evidence_master_9of10_RESULTS.zip
+Causal intervention,Qwen 7B top-3,Necessity lift,0.211,95% CI 0.134 to 0.292,Primary,pope_hidden_evidence_master_9of10_RESULTS.zip
+Causal intervention,Qwen 7B top-3,Sufficiency lift,0.508,95% CI 0.404 to 0.609,Primary,pope_hidden_evidence_master_9of10_RESULTS.zip
+Causal intervention,Qwen 3B top-3,Necessity lift,0.161,95% CI 0.102 to 0.231,Primary,pope_hidden_evidence_master_9of10_RESULTS.zip
+Causal intervention,Qwen 3B top-3,Sufficiency lift,0.339,95% CI 0.253 to 0.425,Primary,pope_hidden_evidence_master_9of10_RESULTS.zip
+Verification,Qwen 7B discovery,AUROC,0.747,Discovery result; not a transfer claim,Primary with discovery qualifier,pope_hidden_evidence_semantic_verification_RESULTS.zip
+Verification,Qwen 3B frozen transfer,AUROC,0.558,95% CI 0.434 to 0.685,Primary negative result,pope_crossmodel_3b_sufficiency_confirmation_RESULTS.zip
+Verification,Qwen 3B model-specific tuning,AUROC,0.623,95% CI 0.498 to 0.748; appendix ablation,Ablation,pope_3b_layer_tuned_verification_RESULTS.zip
+Semantic diagnosis,Qwen 7B held-out,Causal patch beats random rate,0.7,Hallucinations only also 0.700; p=0.0077,Primary application result,qwen_semantic_corrected_results.zip
+Semantic diagnosis,Qwen 3B held-out,Causal patch beats random rate,0.75,Hallucinations only 0.722; p=0.0016,Primary application result,qwen_semantic_corrected_results.zip
+Semantic diagnosis,Qwen 7B selected depth,Mean target margin on hallucinations,1.91,Alternative-layer mean 0.408; exact p=0.034,Toy baseline,analysis/random_layer_baseline/random_layer_baseline_results.csv
+Semantic diagnosis,Qwen 3B transferred depth,Mean target margin on hallucinations,1.506,Alternative-layer mean 0.467; exact p=0.027,Toy baseline,analysis/random_layer_baseline/random_layer_baseline_results.csv
+Qualitative example,Airport service vehicle / car hallucination,p_yes after top-patch blur,0.048,Clean 0.936; random-patch blur 0.931; semantic margin +1.014,Headline qualitative example,qwen_semantic_causal_hallucination_diagnosis_RESULTS.zip

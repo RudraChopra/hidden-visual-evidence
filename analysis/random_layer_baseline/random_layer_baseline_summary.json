@@ -1,0 +1,113 @@
+{
+  "description": "Toy baseline requested by James. The semantic layer selected using Qwen 7B development data, and its frozen relative-depth transfer to Qwen 3B, are compared with a uniformly chosen alternative hidden-state index on held-out examples.",
+  "qwen7b": {
+    "model": "Qwen 7B",
+    "selected_hidden_state_index": 28,
+    "n_random_layers": 28,
+    "metrics": {
+      "causal_beats_random_rate_all": {
+        "model": "Qwen 7B",
+        "selected_hidden_state_index": 28,
+        "metric": "All held-out: fraction causal > random patch",
+        "selected_layer_value": 0.7,
+        "random_layer_mean": 0.5321428571428571,
+        "random_layer_sd": 0.09903636230294942,
+        "random_layer_median": 0.5,
+        "selected_layer_percentile": 89.28571428571429,
+        "exact_random_layer_p": 0.13793103448275862,
+        "n_random_layers": 28
+      },
+      "causal_beats_random_rate_hallucinated": {
+        "model": "Qwen 7B",
+        "selected_hidden_state_index": 28,
+        "metric": "Hallucinations: fraction causal > random patch",
+        "selected_layer_value": 0.7,
+        "random_layer_mean": 0.6178571428571429,
+        "random_layer_sd": 0.07842699567619335,
+        "random_layer_median": 0.6,
+        "selected_layer_percentile": 78.57142857142857,
+        "exact_random_layer_p": 0.2413793103448276,
+        "n_random_layers": 28
+      },
+      "mean_target_margin_all": {
+        "model": "Qwen 7B",
+        "selected_hidden_state_index": 28,
+        "metric": "All held-out: mean target-concept margin",
+        "selected_layer_value": 1.5627737283706664,
+        "random_layer_mean": 0.18779661347424345,
+        "random_layer_sd": 0.35049578294471234,
+        "random_layer_median": 0.1333479516208172,
+        "selected_layer_percentile": 100.0,
+        "exact_random_layer_p": 0.034482758620689655,
+        "n_random_layers": 28
+      },
+      "mean_target_margin_hallucinated": {
+        "model": "Qwen 7B",
+        "selected_hidden_state_index": 28,
+        "metric": "Hallucinations: mean target-concept margin",
+        "selected_layer_value": 1.909721279144287,
+        "random_layer_mean": 0.4079324023798108,
+        "random_layer_sd": 0.1632452875178475,
+        "random_layer_median": 0.3620264377444983,
+        "selected_layer_percentile": 100.0,
+        "exact_random_layer_p": 0.034482758620689655,
+        "n_random_layers": 28
+      }
+    }
+  },
+  "qwen3b": {
+    "model": "Qwen 3B",
+    "selected_hidden_state_index": 36,
+    "n_random_layers": 36,
+    "metrics": {
+      "causal_beats_random_rate_all": {
+        "model": "Qwen 3B",
+        "selected_hidden_state_index": 36,
+        "metric": "All held-out: fraction causal > random patch",
+        "selected_layer_value": 0.75,
+        "random_layer_mean": 0.6311728395061729,
+        "random_layer_sd": 0.06709883438874069,
+        "random_layer_median": 0.6388888888888888,
+        "selected_layer_percentile": 88.88888888888889,
+        "exact_random_layer_p": 0.13513513513513514,
+        "n_random_layers": 36
+      },
+      "causal_beats_random_rate_hallucinated": {
+        "model": "Qwen 3B",
+        "selected_hidden_state_index": 36,
+        "metric": "Hallucinations: fraction causal > random patch",
+        "selected_layer_value": 0.7222222222222222,
+        "random_layer_mean": 0.5686728395061729,
+        "random_layer_sd": 0.06689317048177389,
+        "random_layer_median": 0.5555555555555556,
+        "selected_layer_percentile": 94.44444444444444,
+        "exact_random_layer_p": 0.08108108108108109,
+        "n_random_layers": 36
+      },
+      "mean_target_margin_all": {
+        "model": "Qwen 3B",
+        "selected_hidden_state_index": 36,
+        "metric": "All held-out: mean target-concept margin",
+        "selected_layer_value": 1.7969790233506098,
+        "random_layer_mean": 0.6817610685679096,
+        "random_layer_sd": 0.3118767611684384,
+        "random_layer_median": 0.7457914350347387,
+        "selected_layer_percentile": 100.0,
+        "exact_random_layer_p": 0.02702702702702703,
+        "n_random_layers": 36
+      },
+      "mean_target_margin_hallucinated": {
+        "model": "Qwen 3B",
+        "selected_hidden_state_index": 36,
+        "metric": "Hallucinations: mean target-concept margin",
+        "selected_layer_value": 1.505682733323839,
+        "random_layer_mean": 0.4669420517590127,
+        "random_layer_sd": 0.3325725991098003,
+        "random_layer_median": 0.4914475621448623,
+        "selected_layer_percentile": 100.0,
+        "exact_random_layer_p": 0.02702702702702703,
+        "n_random_layers": 36
+      }
+    }
+  }
+}
