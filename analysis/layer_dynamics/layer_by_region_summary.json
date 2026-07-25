@@ -1,0 +1,40 @@
+{
+  "analysis_type": "Exploratory layer-by-image-region sensitivity analysis. Not activation patching.",
+  "qwen7b_examples": 80,
+  "qwen7b_hidden_state_indices": 29,
+  "best_grounded_patch_ap_layer": {
+    "layer": 21,
+    "value": 0.7810663817470519
+  },
+  "most_spatially_concentrated_layer": {
+    "layer": 24,
+    "value": 0.8273605717075776
+  },
+  "most_adjacently_stable_layer": {
+    "layer": 25,
+    "value": 1.0
+  },
+  "interpretation_rule": "Proceed to activation patching only if the plots show a coherent change in spatial sensitivity or semantic signal across depth that is consistent across examples.",
+  "semantic": {
+    "qwen3b": {
+      "best_hallucination_margin_depth": {
+        "layer": 36,
+        "value": 1.3971653732598996
+      },
+      "best_hallucination_positive_rate_depth": {
+        "layer": 34,
+        "value": 0.7254901960784313
+      }
+    },
+    "qwen7b": {
+      "best_hallucination_margin_depth": {
+        "layer": 28,
+        "value": 2.141960287094116
+      },
+      "best_hallucination_positive_rate_depth": {
+        "layer": 27,
+        "value": 0.8
+      }
+    }
+  }
+}

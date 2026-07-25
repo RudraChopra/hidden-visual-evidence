@@ -1,0 +1,7 @@
+Attach this file to the existing GitHub release:
+
+qwen_layer_by_image_region_analysis_RESULTS.zip
+
+Do not upload the result ZIP through GitHub's normal browser file uploader.
+The notebook, CSV summaries, figures, notes, and source-of-truth files are all
+included in this update package.

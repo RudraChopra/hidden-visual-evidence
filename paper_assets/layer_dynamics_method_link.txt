@@ -1,0 +1,7 @@
+Layerwise analysis provides additional context for the causal
+patch framework. In Qwen 7B, target-aligned patch rankings are weak and less
+stable at earlier hidden-state depths, then emerge sharply around the later
+half of the model and remain stable through the final state. We treat this as
+evidence that the later answer-position representations used by our method
+contain a consolidated spatial signal, not as proof of the exact layer at
+which the model reads a region.

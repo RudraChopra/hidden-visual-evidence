@@ -1,5 +1,6 @@
 # Hidden Visual Evidence Results Repository
 
+This folder is the canonical record for the paper currently titled:
 
 **Self Verification Through Hidden Visual Evidence in Vision Language Models**
 
@@ -74,3 +75,34 @@ model-selection claim.
    report formal taxonomy percentages until an independent review is complete.
 6. Both evaluated models are from the Qwen family.
 
+## Suggested GitHub setup
+
+Large binary outputs should use Git LFS:
+
+```bash
+git lfs install
+git lfs track "*.zip"
+git lfs track "*.png"
+git add .gitattributes
+```
+
+Commit raw result ZIPs without modifying them. `FILE_MANIFEST_SHA256.csv`
+allows later verification that files have not changed.
+
+
+## Layer-dynamics extension
+
+The repository now includes an exploratory all-layer spatial analysis under
+`analysis/layer_dynamics/`.
+
+The result supports the main framework rather than creating a separate method:
+target-aligned patch rankings emerge sharply and become stable in later Qwen
+7B hidden states. Use the appendix assets in `paper_assets/` and avoid claiming
+that the analysis identifies the exact causal read layer.
+
+## Related-work handoff
+
+`related_work/RELATED_WORK_NOTES.md` contains a verified starter pack organized
+around intervention-based interpretability, image perturbation, internal visual
+representations, and hallucination diagnosis. The final prose remains assigned
+to Xavier.

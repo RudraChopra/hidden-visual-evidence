@@ -35,5 +35,19 @@
       "vehicle",
       "car"
     ]
+  },
+  "layer_dynamics": {
+    "qwen7b_patch_ap_index_15": 0.364521,
+    "qwen7b_patch_ap_index_21": 0.7810663817470519,
+    "qwen7b_top1_hit_index_15": 0.325,
+    "qwen7b_top1_hit_index_21": 0.925,
+    "qwen7b_top3_hit_index_21": 0.975,
+    "same_top_patch_index_21_to_final_rate": 0.8,
+    "mean_adjacent_top_patch_stability_index_21_onward": 0.959375,
+    "most_concentrated_hidden_state_index": 24,
+    "airport_patch_30_top_from_index": 15,
+    "airport_patch_30_mass_index_15": 0.064712,
+    "airport_patch_30_mass_index_24": 0.380426,
+    "claim_boundary": "Layerwise sensitivity evidence only; not activation patching and not the exact causal read time."
   }
 }

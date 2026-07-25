@@ -1,0 +1,27 @@
+\section{Related Work}
+
+% Xavier: turn the notes in related_work/RELATED_WORK_NOTES.md into a concise
+% section. Do not simply list papers. Each paragraph should end by stating the
+% distinction from our framework.
+
+\paragraph{Intervention-based interpretability.}
+% ROME, activation-patching best practices, Patchscopes.
+% Main point: interventions can localize or decode internal information, but
+% the corruption, recovery metric, and target representation matter.
+
+\paragraph{Image perturbation and transformer attribution.}
+% Meaningful Perturbation, RISE, Explaining by Removing, Chefer et al., CAAP.
+% Main point: prior work perturbs inputs or attributes transformer predictions.
+% Our method ranks patches by answer-position hidden-state change and then
+% validates the selected regions with masks, necessity, and sufficiency.
+
+\paragraph{Internal visual representations in VLMs.}
+% Jiang et al. and VISTA.
+% Main point: prior work projects or steers internal visual representations.
+% Our semantic probe is applied to a region selected independently through a
+% causal spatial intervention and paired with a counterfactual answer test.
+
+\paragraph{Hallucination detection and diagnosis.}
+% HALP plus existing POPE and decoding references.
+% Main point: detection predicts whether a hallucination is present; diagnosis
+% explains the visual cue, semantic interpretation, and counterfactual cause.
